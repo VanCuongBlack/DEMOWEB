@@ -27,6 +27,7 @@ jobs:
         with:
           context: .
           push: true
+          image: ${{ secrets.DOCKER_USERNAME }}/docker-github-action-test
           tags: |
             vancuong0335/tranvancuong:latest
             vancuong0335/tranvancuong:${{ github.sha }}
